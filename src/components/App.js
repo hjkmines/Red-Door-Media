@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 import LogIn from './LogIn'; 
+import Navbar from './Navbar'; 
 
 class App extends Component {
     render() {
