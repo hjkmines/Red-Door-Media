@@ -1,9 +1,12 @@
 import React, { Component } from 'react'; 
+import LogIn from './LogIn'; 
 
 class App extends Component {
     render() {
         return (
-            <div>App</div>
+            <div>
+                <LogIn /> 
+            </div>
         )
     }
 } 
