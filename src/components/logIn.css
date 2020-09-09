@@ -2,15 +2,15 @@
     background-image: url('../images/youtube_wall.png');
   }
   
-  form {
+  /* form {
     margin: auto;
-    /* margin-top: 190px; */
+    margin-top: 190px;
     border: black;
     border-style: solid;
     border-radius: 15px;
     border-width: medium;
     background-color: seashell;
-  }
+  } */
   
   h1 {
     font-size: 100px;
