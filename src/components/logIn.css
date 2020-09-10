@@ -57,6 +57,213 @@
     transform: translateY(-50%);    
   }
   
+  li {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  #headlines-linkers {
+    color: whitesmoke;
+  }
+  
+  #header {
+    margin-top: 18px;
+    margin-right: 25px;
+    color: white; 
+  }
+  
+  .rows {
+    margin-top: 30px;
+    margin-bottom: 65px;
+  
+  }
+  
+  .category {
+    text-align: center;
+    
+  }
+  
+  .card {
+    width: 18rem;
+  }
+  
+  .arrow {
+    margin-top: 500px;
+    color: black;
+  }
+  
+  .left-arrow {
+    margin-left: 100px;
+  }
+  
+  .right-arrow {
+    margin-right: 100px;
+  }
+  
+  .articles {
+    width: 788px; 
+    height: 400px; 
+  }
+  
+  .article-button {
+    display: flex; 
+    justify-content: space-evenly; 
+  }
+  
+  
+  .images {
+    width: 780px; 
+    height: 445px; 
+  }
+  
+  .flexer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-link {
+    margin-left: 10px; 
+    margin-right: 10px;
+  }
+  
+  .navbar-nav {
+    height: 40px;
+  }
+  
+  .headlines-container {
+    margin-top: 18px;
+    margin-left: 35px;
+    width: 400px; 
+  }
+  
+  .stock {
+    display: inline;
+    font-size: 20px;
+  }
+  
+  .stock-bar {
+    margin-top: 65px; 
+    height: 35px;
+  }
+  
+  .stock-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .headlines-bar {
+    border-top: black;
+    border-top-style: solid;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 16px;
+  }
+  
+  .main-videos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+  }
+  
+  .card-image {
+    width: 286px; 
+    height: 184px; 
+  }
+  
+  .top-video {
+    margin-bottom: 30px;
+    border: white;
+    border-style: solid;
+  }
+  
+  .article-title {
+    width: 245px; 
+    height: 120px;
+  }
+  
+  .clips {
+    border: white;
+    border-style: solid;
+  }
+  
+  .trending-videos {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 25px;
+  }
+  
+  .bottom-video {
+    border: white;
+    border-style: solid;
+  }
+  
+  #brand {
+    color: white;
+    font-size: 21px;
+    margin-right: 35px;
+    margin-left: 20px;
+  }
+  
+  #text-links {
+    display: flex; 
+    justify-content: center; 
+    background-color: cornsilk;
+    
+  }
+  
+  #linkers {
+    color: black;
+    padding: 5px 5px 5px 5px; 
+  }
+  
+  #second-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  #news-slide {
+    width: 700px;
+    margin-top: 67px;
+    height: 470px; 
+    background-color: lightslategrey;
+    border: black;
+    margin-left: 46px;
+    border-width: 6px;
+    border-style: solid;
+  }
+  
+  #video-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: black;
+  }
+  
+  #video-title {
+    color: white;
+  }
+  
+  #vids {
+    margin-bottom: 30px;
+  }
+  
+  h1.header {
+    font-size: 50px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  
   /* Animation */
   .anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
@@ -71,3 +278,4 @@
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
   }
+

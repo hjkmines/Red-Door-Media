@@ -13,6 +13,7 @@ const Slide = ({ slides }) => {
                         {article.title}
                     </a>
                 </div>
+                <img className="d-block w-100 articles" src={article.urlToImage} alt={article.title} />
             </div>
         )
     }) 
@@ -25,6 +26,7 @@ const Slide = ({ slides }) => {
                         {article.title}
                     </a>
                 </div>
+                <img className="d-block w-100 articles" src={article.urlToImage} alt={article.title} />
             </div>
         )
     })
