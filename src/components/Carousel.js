@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 import news from '../api/news'; 
+import Slide from './Slide'; 
 
 class Carousel extends Component {
     state = { slides: [] }
@@ -16,15 +17,16 @@ class Carousel extends Component {
             }
         })
 
-        console.log(response)
+        this.setState({ slides: response.data.articles })
     } 
 
     render() {
         return (
             <div>
                 <div id="news-slide" className="carousel slide" data-ride="carousel">
-                    <div className="carousel-inner carousel-news">
-                    </div>
+                        <div className="carousel-inner carousel-news">
+                            <Slide slides={this.state.slides} /> 
+                        </div>
                     <a className="carousel-control-prev arrow left-arrow" href="#news-slide" role="button" data-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span className="sr-only">Previous</span>
