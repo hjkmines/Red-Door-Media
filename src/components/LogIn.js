@@ -8,7 +8,7 @@ class LogIn extends Component {
             <body>
             <div className='body'>
                 <div className='header'>
-                    <header className="d-flex justify-content-center" ><h1><strong>RedDoor Media</strong></h1></header>
+                    <header className="d-flex justify-content-center" ><h1 className='company-title'><strong>RedDoor Media</strong></h1></header>
                     <h2 className="d-flex justify-content-center line-1 anim-typewriter">Browse all your favorite content all in one place.</h2>
                 </div>
 

@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar'; 
 import Carousel from './Carousel'; 
+import MainVideo from './MainVideo'; 
 import youtube from '../api/youtube'; 
 
 class Home extends Component {
+
     state = { 
-        videos: [], 
-        main: 'news', 
-        mainArray: [], 
-        trending: 'trending', 
-        trendingArray: []
+        mainVideo: null,
+        main: 'news'
     }
 
     componentDidMount() {
@@ -17,25 +16,28 @@ class Home extends Component {
     }
 
     loadVideos = async () => {
-        const response = await youtube('/search', {
+        const response = await youtube.get('/search', {
             params: {
-                q: this.state.main 
+                q: this.state.main
             }
         })
         
-        this.setState({ mainArray: response.data.items[0] })
-
+        this.setState({ mainVideo: response.data.items[0] })
     }
 
     render() {
         return (
         <body className='body'>
             <Navbar /> 
-            <Carousel /> 
-            <section className="main-videos">
-                <iframe className="top-video" width="550" height="315" src="https://www.youtube.com/embed/2fcx4oNPe3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-        </body>
+            <div className='top-titles'>
+                <h1>Today's Top Headlines</h1>
+                <h1>Top News Clip</h1>
+            </div>
+            <div className='toppers'>
+                <Carousel className='topper' />
+                { this.state.mainVideo !== null ? <MainVideo video={this.state.mainVideo} className='topper vid' /> : <div></div> } 
+            </div>
+        </body> 
         )
     }
 }
