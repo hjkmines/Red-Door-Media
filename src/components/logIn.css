@@ -77,7 +77,35 @@
     margin-bottom: 65px;
   
   }
-  
+
+  .trending-videos {
+    margin-top: 60px; 
+    margin-bottom: 15px;
+    color: white; 
+    display: flex; 
+    justify-content: center;
+  }
+
+  .trending-news {
+    margin-top: 10px; 
+    margin-bottom: 15px;
+    color: white; 
+    display: flex; 
+    justify-content: center;
+  }
+
+  .trending-clips-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .trendings {
+    display: inline;
+    margin-left: 15px; 
+    margin-right: 15px; 
+  }
+
   .category {
     text-align: center;
     
@@ -186,15 +214,7 @@
     border-style: solid;
   }
   
-  .trending-videos {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-bottom: 25px;
-  }
-  
+
   .bottom-video {
     border: white;
     border-style: solid;
