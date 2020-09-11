@@ -24,6 +24,12 @@
   .password {
     margin-top: 25px;
   }
+
+  .login {
+    background-color: white;
+    margin: auto; 
+    border-radius: 25px;
+  }
  
   .line-1{
     position: relative;

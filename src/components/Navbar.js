@@ -34,11 +34,12 @@ class Navbar extends Component {
               </ul>
               <form className="form-inline my-2 my-lg-0">
                 <SearchBar 
-                onNewsSearch={this.props.onNewsSearch} 
-                onYoutubeSearch={this.props.onYoutubeSearch} 
-                onImageSearch={this.props.onImageSearch}
-                onSearchSubmit={this.props.onSearchSubmit}
-                mediaType={this.props.mediaType}
+                  onNewsSearch={this.props.onNewsSearch} 
+                  onYoutubeSearch={this.props.onYoutubeSearch} 
+                  onImageSearch={this.props.onImageSearch}
+                  onSearchSubmit={this.props.onSearchSubmit}
+                  mediaType={this.props.mediaType}
+                  setMediaType={this.props.setMediaType}
                 /> 
               </form>
             </div>

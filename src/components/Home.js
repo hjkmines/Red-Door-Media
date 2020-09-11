@@ -12,7 +12,7 @@ class Home extends Component {
     state = { 
         mainVideo: null,
         main: 'news', 
-        trendingVideos: 'popular', 
+        trendingVideos: 'random', 
         trendingVideosList: [], 
         trendingNews: 'popular',
         trendingNewsList: []
@@ -58,7 +58,17 @@ class Home extends Component {
     render() {
         return (
         <body className='body'>
-            <Navbar /> 
+            <Navbar 
+                onSearchSubmit={this.props.onSearchSubmit} 
+                mediaType={this.props.mediaType}
+                setMediaType={this.props.setMediaType}
+                onImageSearch={this.props.onImageSearch} 
+                onNewsSearch={this.props.onNewsSearch} 
+                onYoutubeSearch={this.props.onYoutubeSearch} 
+                images={this.props.images}
+                videos={this.props.videos}
+                news={this.props.news}
+                 /> 
             <div className='top-titles'>
                 <h1>Today's Top Headlines</h1>
                 <h1>Top News Clip</h1>

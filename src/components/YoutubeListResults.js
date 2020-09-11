@@ -2,7 +2,7 @@ import React from 'react'
 
 const YoutubeListResults = ({ videos }) => {
 
-    const topFourVideos = videos.slice(0, 10); 
+    const topFourVideos = videos.slice(0, 12); 
 
     const renderedList = topFourVideos.map( video => {
         const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
