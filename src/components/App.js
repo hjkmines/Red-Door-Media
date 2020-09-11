@@ -3,6 +3,7 @@ import LogIn from './LogIn';
 import Home from './Home';
 import NewsResults from './NewsResult';
 import YoutubeResult from './YoutubeResult'; 
+import ImageResult from './ImageResult'; 
 
 class App extends Component {
 
@@ -11,7 +12,8 @@ class App extends Component {
             <div>
                 {/* <Home /> */}
                 {/* <NewsResults />  */}
-                <YoutubeResult /> 
+                {/* <YoutubeResult />  */}
+                <ImageResult />
             </div>
         )
     }

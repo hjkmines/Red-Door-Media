@@ -16,7 +16,8 @@ class ImageResult extends Component {
     onImageSearch = async (term) => {
         const response = await unsplash.get('/search/photos', {
             params: {
-               query: term  
+               query: term, 
+               per_page: 100
             }
         })
 
@@ -27,8 +28,8 @@ class ImageResult extends Component {
         return (
             <div>
                     <Navbar onImageSearch={this.onImageSearch} />
-                <div> 
-                    <ImageResultList images={this.state.images} /> 
+                <div className='images'> 
+                    <ImageResultList images={this.state.images} className='images' /> 
                 </div>
             </div>
         )
