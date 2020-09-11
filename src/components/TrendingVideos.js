@@ -2,7 +2,7 @@ import React from 'react';
 
 const TrendingVideos = ({ videos }) => {
 
-    const topFourVideos = videos.slice(0,4); 
+    const topFourVideos = videos.slice(0, 5); 
 
     const renderedList = topFourVideos.map( video => {
         const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`

@@ -3,20 +3,25 @@ import Navbar from './Navbar';
 import Carousel from './Carousel'; 
 import MainVideo from './MainVideo'; 
 import TrendingVideos from './TrendingVideos'; 
+import TrendingNews from './TrendingNews'; 
 import youtube from '../api/youtube'; 
+import news from '../api/news'; 
 
 class Home extends Component {
 
     state = { 
         mainVideo: null,
         main: 'news', 
-        trending: 'trending', 
-        trendingList: []
+        trendingVideos: 'popular', 
+        trendingVideosList: [], 
+        trendingNews: 'popular',
+        trendingNewsList: []
     }
 
     componentDidMount() {
         this.loadVideos()
         this.loadTrendingVideos()
+        this.loadTrendingNews() 
     }
 
     loadVideos = async () => {
@@ -32,11 +37,22 @@ class Home extends Component {
     loadTrendingVideos = async () => {
         const response = await youtube.get('/search', {
             params: {
-                q: this.state.trending
+                q: this.state.trendingVideos
             }
         })
 
-        this.setState({ trendingList: response.data.items })
+        this.setState({ trendingVideosList: response.data.items })
+    }
+
+    loadTrendingNews = async () => {
+        const response = await news.get('/everything', {
+            params: {
+                q: this.state.trendingNews, 
+                apiKey: '2a717d771d85444cb9cb8eda83414b88'
+            }
+        })
+
+        this.setState({ trendingNewsList: response.data.articles })
     }
 
     render() {
@@ -55,10 +71,13 @@ class Home extends Component {
                 <h1 className='trending-video-text'>Trending Videos</h1>
             </div>
             <div className='trending-clips-container'>
-            { this.state.trendingList.length > 0 ? <TrendingVideos videos={this.state.trendingList} className='trending-clips' /> : <div></div>} 
+            { this.state.trendingVideosList.length > 0 ? <TrendingVideos videos={this.state.trendingVideosList} className='trending-clips' /> : <div></div>} 
             </div>
-            <div className='trending-news'>
+            <div className='trending-news-label'>
                 <h1 className='trending-videos-text'>Trending News</h1>
+            </div>
+            <div className='trending-news-container'>
+                { this.state.trendingNewsList.length > 0 ? <TrendingNews news={this.state.trendingNewsList} className='trending-news' /> : <div></div>} 
             </div>
         </body> 
         )

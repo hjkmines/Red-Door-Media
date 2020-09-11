@@ -1,17 +1,7 @@
   body {
     background-image: url('../images/youtube_wall.png');
   }
-  
-  /* form {
-    margin: auto;
-    margin-top: 190px;
-    border: black;
-    border-style: solid;
-    border-radius: 15px;
-    border-width: medium;
-    background-color: seashell;
-  } */
-  
+
   .company-title {
     font-size: 100px;
     -webkit-text-stroke: 2px black; 
@@ -34,16 +24,7 @@
   .password {
     margin-top: 25px;
   }
-  
-  /* button.btn {
-    margin-top: 15px;
-  }
-  
-  .link {
-    text-align: center;
-    margin-top: 20px;
-  } */
-  
+ 
   .line-1{
     position: relative;
     top: 50%;  
@@ -71,12 +52,12 @@
     margin-right: 25px;
     color: white; 
   }
-  
+/*   
   .rows {
     margin-top: 30px;
     margin-bottom: 65px;
   
-  }
+  } */
 
   .trending-videos {
     margin-top: 60px; 
@@ -86,7 +67,7 @@
     justify-content: center;
   }
 
-  .trending-news {
+  .trending-news-label {
     margin-top: 10px; 
     margin-bottom: 15px;
     color: white; 
@@ -100,20 +81,37 @@
     justify-content: space-around;
   }
 
+  .trending-news-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: baseline; */
+  }
+
   .trendings {
     display: inline;
     margin-left: 15px; 
     margin-right: 15px; 
   }
 
-  .category {
+  /* .category {
     text-align: center;
     
-  }
+  } */
   
   .card {
-    width: 18rem;
+    width: 15rem;
+    height: 355px; 
+    margin-left: 15px; 
+    margin-right: 15px;
+    display: inline-table; 
   }
+
+  .news-picture {
+    width: 238px; 
+    height: 155px; 
+  }
+
   
   .arrow {
     margin-top: 500px;
@@ -143,11 +141,11 @@
     width: 780px; 
     height: 445px; 
   }
-  
+/*   
   .flexer {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
   
   .nav-link {
     margin-left: 10px; 
@@ -158,26 +156,12 @@
     height: 40px;
   }
   
-  .headlines-container {
+  /* .headlines-container {
     margin-top: 18px;
     margin-left: 35px;
     width: 400px; 
-  }
-  
-  .stock {
-    display: inline;
-    font-size: 20px;
-  }
-  
-  .stock-bar {
-    margin-top: 65px; 
-    height: 35px;
-  }
-  
-  .stock-list {
-    display: flex;
-    justify-content: space-around;
-  }
+  } */
+
   
   .headlines-bar {
     border-top: black;
