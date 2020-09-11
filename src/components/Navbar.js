@@ -37,6 +37,8 @@ class Navbar extends Component {
                 onNewsSearch={this.props.onNewsSearch} 
                 onYoutubeSearch={this.props.onYoutubeSearch} 
                 onImageSearch={this.props.onImageSearch}
+                onSearchSubmit={this.props.onSearchSubmit}
+                mediaType={this.props.mediaType}
                 /> 
               </form>
             </div>

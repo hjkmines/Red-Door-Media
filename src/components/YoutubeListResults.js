@@ -10,8 +10,8 @@ const YoutubeListResults = ({ videos }) => {
             <section className='trendings'>
                 <iframe 
                  className="top-video"
-                 width="300"
-                 height="175"
+                 width="590"
+                 height="400"
                  src={videoSrc}
                  frameborder="0"
                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

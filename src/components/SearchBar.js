@@ -19,6 +19,9 @@ class SearchBar extends Component {
     onSubmit = (event) => {
         event.preventDefault(); 
 
+        // this.props.onSearchSubmit()
+        this.props.mediaType(this.state.type)
+
         if (this.state.type === 'News') {
             this.props.onNewsSearch(this.state.term)
         } else if (this.state.type === 'Videos') {
