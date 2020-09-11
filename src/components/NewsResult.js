@@ -27,8 +27,10 @@ class NewsResults extends Component {
     render() {
         return (
             <div>
-                <Navbar />
-                <NewsListResults /> 
+                    <Navbar onSearch={this.onSearch} />
+                <div className='news-results'>
+                    <NewsListResults news={this.state.news} /> 
+                </div>
             </div>
         )
     }

@@ -9,7 +9,7 @@ const TrendingNews = ({ news }) => {
             <div className='card' >
                 <img className="card-img-top news-picture" src={article.urlToImage} alt="image" />
                 <div className="card-body">
-                    <h5 className="card-title">{article.title}</h5>
+                    <h6 className="card-title">{article.title}</h6>
                     <section className="article-button"><a href={article.url} className="btn btn-primary">Go to full article</a></section>
                 </div>
             </div>
