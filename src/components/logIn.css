@@ -213,6 +213,10 @@
     border: white;
     border-style: solid;
   }
+
+  .form-control {
+    margin-right: 10px; 
+  }
   
 
   .bottom-video {

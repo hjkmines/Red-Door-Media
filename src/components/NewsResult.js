@@ -10,10 +10,10 @@ class NewsResults extends Component {
     }
 
     componentDidMount() {
-        this.onSearch() 
+        this.onNewsSearch() 
     }
 
-    onSearch = async (term) => {
+    onNewsSearch = async (term) => {
         const response = await news.get('/everything', {
             params: {
                 q: term, 
@@ -27,7 +27,7 @@ class NewsResults extends Component {
     render() {
         return (
             <div>
-                    <Navbar onSearch={this.onSearch} />
+                    <Navbar onNewsSearch={this.onNewsSearch} />
                 <div className='news-results'>
                     <NewsListResults news={this.state.news} /> 
                 </div>

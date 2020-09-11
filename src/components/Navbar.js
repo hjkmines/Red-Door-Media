@@ -33,7 +33,7 @@ class Navbar extends Component {
                 </li>
               </ul>
               <form className="form-inline my-2 my-lg-0">
-                <SearchBar onSearch={this.props.onSearch} /> 
+                <SearchBar onNewsSearch={this.props.onNewsSearch} onYoutubeSearch={this.props.onYoutubeSearch} /> 
               </form>
             </div>
         </nav>
