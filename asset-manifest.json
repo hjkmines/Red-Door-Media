@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Red-Door-Media/static/css/main.8a75031d.chunk.css",
+    "main.js": "/Red-Door-Media/static/js/main.df466c16.chunk.js",
+    "main.js.map": "/Red-Door-Media/static/js/main.df466c16.chunk.js.map",
+    "runtime-main.js": "/Red-Door-Media/static/js/runtime-main.d956acf2.js",
+    "runtime-main.js.map": "/Red-Door-Media/static/js/runtime-main.d956acf2.js.map",
+    "static/js/2.051155c5.chunk.js": "/Red-Door-Media/static/js/2.051155c5.chunk.js",
+    "static/js/2.051155c5.chunk.js.map": "/Red-Door-Media/static/js/2.051155c5.chunk.js.map",
+    "index.html": "/Red-Door-Media/index.html",
+    "precache-manifest.10f43bb8818c807a86417b033940b8d3.js": "/Red-Door-Media/precache-manifest.10f43bb8818c807a86417b033940b8d3.js",
+    "service-worker.js": "/Red-Door-Media/service-worker.js",
+    "static/css/main.8a75031d.chunk.css.map": "/Red-Door-Media/static/css/main.8a75031d.chunk.css.map",
+    "static/js/2.051155c5.chunk.js.LICENSE.txt": "/Red-Door-Media/static/js/2.051155c5.chunk.js.LICENSE.txt",
+    "static/media/logIn.css": "/Red-Door-Media/static/media/youtube_wall.fcc1dbc1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d956acf2.js",
+    "static/js/2.051155c5.chunk.js",
+    "static/css/main.8a75031d.chunk.css",
+    "static/js/main.df466c16.chunk.js"
+  ]
+}
